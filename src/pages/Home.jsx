@@ -1,8 +1,9 @@
 import Chart from "../components/Chart";
-import Featured from "../components/Featured";
+import Featured from "../components/featured/Featured";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Widget from "../components/widget/Widget";
+import Table from "../components/table/Table";
 
 const Home = () => {
   return (
@@ -19,6 +20,15 @@ const Home = () => {
         <div className="flex p-[20px] gap-[20px] py-[5px] px-[20px] ">
           <Featured />
           <Chart />
+        </div>
+        <div className=" shadow-lg m-[20px] p-[20px]">
+          <div className="latest-transc">
+            <div className="font-[500] text-gray-400 mb-[15px]">
+              Latest Trasanction
+            </div>
+
+            <Table />
+          </div>
         </div>
       </div>
     </div>
