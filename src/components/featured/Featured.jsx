@@ -8,8 +8,8 @@ import "./featured.css";
 const Featured = () => {
   let percentage = Math.floor(Math.random() * 100) + 1;
   return (
-    <div className="featured  flex-[2] items-center shadow-lg p-[10px]">
-      <div className="top flex justify-between items-center  text-gray-500">
+    <div className="featured  flex-[2] flex-col  justify-between items-center shadow-lg p-[10px]">
+      <div className="top flex justify-between items-center h-fit text-gray-500">
         <h1 className="text-[16px] font-semibold">Total Revenue</h1>
         <MoreVertOutlinedIcon fontSize="small" className="" />
       </div>

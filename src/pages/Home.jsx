@@ -19,7 +19,7 @@ const Home = () => {
         </div>
         <div className="flex p-[20px] gap-[20px] py-[5px] px-[20px] ">
           <Featured />
-          <Chart />
+          <Chart title={"Last 6 months (revenue)"} aspect={2 / 1} />
         </div>
         <div className=" shadow-lg m-[20px] p-[20px]">
           <div className="latest-transc">
