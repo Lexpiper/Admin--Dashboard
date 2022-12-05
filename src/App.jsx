@@ -4,6 +4,7 @@ import List from "./pages/List";
 import Single from "./pages/Single";
 import New from "./pages/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { productInputs, userInputs } from "./formsource";
 
 function App() {
   return (
@@ -15,12 +16,18 @@ function App() {
           <Route path="users">
             <Route index element={<List />} />
             <Route path=":userid" element={<Single />} />
-            <Route path="new" element={<New />} />
+            <Route
+              path="new"
+              element={<New inputs={userInputs} title={"Add new user"} />}
+            />
           </Route>
           <Route path="products">
             <Route index element={<List />} />
             <Route path=":productid" element={<Single />} />
-            <Route path="new" element={<New />} />
+            <Route
+              path="new"
+              element={<New inputs={productInputs} title={"Add new product"} />}
+            />
           </Route>
         </Route>
       </Routes>
