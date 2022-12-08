@@ -57,7 +57,7 @@ const Widget = ({ type }) => {
   }
 
   return (
-    <div className="widget flex flex-1 justify-between shadow-xl rounded-[10px]">
+    <div className="widget flex flex-1 justify-between dark:shadow-purple-300 dark:shadow-sm shadow-xl rounded-[10px]">
       <div className="left flex flex-col justify-between p-2">
         <span className="font-bold text-[14px] text-gray-400">
           {data.title}
@@ -70,7 +70,7 @@ const Widget = ({ type }) => {
         </span>
       </div>
       <div className="right flex flex-col justify-between p-2">
-        <div className="percentage positive  flex items-center text-[14px] ">
+        <div className="percentage positive dark:text-[lightgreen]  flex items-center text-[14px] ">
           <KeyboardArrowUpOutlinedIcon />
           {diff}
         </div>

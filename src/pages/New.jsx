@@ -8,14 +8,14 @@ const New = ({ inputs, title }) => {
 
   console.log(file);
   return (
-    <div className="w-full flex">
+    <div className="w-full flex ">
       <Sidebar />
       <div className="newcont flex-[6]">
         <Navbar />
-        <div className="top flex shadow-lg m-[20px] p-[10px]">
+        <div className="top flex shadow-md  dark:shadow-gray-400 m-[20px] p-[10px]">
           <h1 className="text-gray-400 text-[20px]">{title}</h1>
         </div>
-        <div className="botom flex shadow-lg m-[20px] p-[10px]">
+        <div className="botom flex shadow-md dark:shadow-gray-400 m-[20px] p-[10px]">
           <div className=" flex-1">
             <div className="w-full">
               <img
@@ -29,7 +29,7 @@ const New = ({ inputs, title }) => {
               />
             </div>
           </div>
-          <div className="righ bg-red-100 flex-[2] ">
+          <div className="righ flex-[2] ">
             <form className="flex flex-wrap  gap-[30px] justify-around">
               <div className="forminp w-[40%]">
                 <label className="flex items-center gap-[10px]" htmlFor="file">
@@ -37,7 +37,7 @@ const New = ({ inputs, title }) => {
                   <DriveFolderUploadOutlinedIcon className="cursor-pointer" />
                 </label>
                 <input
-                  className="w-[100%] p-[5px] border-b-1 border-b-gray-700 border-b-[solid] border-b-2"
+                  className="w-[100%]  p-[5px] border-b-1 border-b-gray-700 border-b-[solid] border-b-2"
                   type="file"
                   id="file"
                   onChange={(e) => setfile(e.target.files[0])}
@@ -50,7 +50,7 @@ const New = ({ inputs, title }) => {
                     {inputs.label}
                   </label>
                   <input
-                    className="w-[100%] p-[5px] border-b-1 border-b-gray-900 border-b-[solid] border-b-2"
+                    className="w-[100%] dark:bg-transparent shadow-sm dark:shadow-gray-400 p-[5px] border-b-1 border-b-gray-900 border-b-[solid] border-b-2"
                     type={input.type}
                     placeholder={input.placeholder}
                   />

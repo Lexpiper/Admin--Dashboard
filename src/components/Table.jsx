@@ -1,5 +1,3 @@
-import "./table.css";
-
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -63,7 +61,7 @@ const List = () => {
   ];
 
   return (
-    <TableContainer component={Paper} className="table">
+    <TableContainer component={Paper} className="table dark:bg-purple-300">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -98,8 +96,8 @@ const List = () => {
                 <div
                   className={`status p-[5px] rounded-[5px] text-center ${
                     row.status == "Approved"
-                      ? "text-green-500 bg-green-100"
-                      : "text-red-500 bg-red-100"
+                      ? "text-green-500 bg-green-100 dark:bg-green-800 dark:text-green-200"
+                      : "text-red-500 bg-red-100 dark:bg-red-800 dark:text-red-200"
                   }`}
                 >
                   {row.status}

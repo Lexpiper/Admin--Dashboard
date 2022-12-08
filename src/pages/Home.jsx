@@ -3,7 +3,7 @@ import Featured from "../components/featured/Featured";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Widget from "../components/widget/Widget";
-import Table from "../components/table/Table";
+import Table from "../components/Table";
 
 const Home = () => {
   return (

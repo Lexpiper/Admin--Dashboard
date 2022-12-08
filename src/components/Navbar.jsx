@@ -7,10 +7,12 @@ import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutline
 import FormatListBulletedOutlinedIcon from "@mui/icons-material/FormatListBulletedOutlined";
 
 const Navbar = () => {
+  let count = Math.floor(Math.random() * 100) + 1;
+
   return (
-    <div className="h-[50px] border-b-[0.5px] border-b-[rgb(231,228,228)] flex items-center text-[14px] text-[#555]">
+    <div className="h-[50px] dark:text-slate-400 border-b-[0.5px] dark:border-b-gray-500 border-b-[rgb(231,228,228)] flex items-center text-[14px] text-[#555]">
       <div className="flex items-center p-[20px] w-full justify-between">
-        <div className="flex items-center border-[0.5px] border-solid border-[lightgray] p-[3px]">
+        <div className="flex items-center border-[0.5px] border-solid dark:border-gray-500 border-[lightgray] p-[3px]">
           <input
             type="text"
             placeholder="search"
@@ -32,13 +34,13 @@ const Navbar = () => {
           <div className="item flex items-center mr-[20px] relative">
             <NotificationsActiveOutlinedIcon className="text-[20px]" />
             <div className="w-[15px] h-[15px] bg-red-600 rounded text-white flex items-center justify-center text-[10px] font-bold absolute top-[-5px] right-[-5px]">
-              1
+              {count}
             </div>
           </div>
           <div className="item flex items-center mr-[20px] relative">
             <ChatBubbleOutlineOutlinedIcon className="text-[20px]" />
             <div className="w-[15px] h-[15px] bg-red-600 rounded text-white flex items-center justify-center text-[10px] font-bold absolute top-[-5px] right-[-5px]">
-              2
+              {count}
             </div>
           </div>
           <div className="item flex items-center mr-[20px]">

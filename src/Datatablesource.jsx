@@ -36,9 +36,9 @@ export const userColumns = [
     renderCell: (params) => {
       return (
         <div
-          className={`cellWithStatus p-[5px] rounded-[5px] ${
+          className={`cellWithStatus dark:text-gray-400 dark:border-none p-[5px] rounded-[5px] ${
             params.row.status === "active"
-              ? "text-green-900 bg-green-100"
+              ? "text-green-900 bg-green-100 "
               : null
           } ${
             params.row.status === "pending" ? "text-red-500 bg-red-200" : null

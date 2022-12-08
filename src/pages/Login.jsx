@@ -1,9 +1,5 @@
 const Login = () => {
-  return (
-    <div>
-      <h1>Login</h1>
-    </div>
-  );
+  return <div className="Side flex">LLogin</div>;
 };
 
 export default Login;

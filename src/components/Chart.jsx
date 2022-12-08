@@ -18,7 +18,7 @@ const Chart = ({ aspect, title }) => {
   ];
 
   return (
-    <div className="flex-[4]  shadow-lg text-gray-500 stroke-slate-400 p-[10px]">
+    <div className="flex-[4]  shadow-lg text-gray-500 dark:stroke-slate-900 stroke-slate-400 p-[10px]">
       <div className="text-[16px] font-semibold mb-[20px]">
         <h1 className="title font-semibold">{title}</h1>
       </div>
